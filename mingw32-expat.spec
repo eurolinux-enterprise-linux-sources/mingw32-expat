@@ -6,7 +6,7 @@
 
 Name:           mingw32-expat
 Version:        2.0.1
-Release:        6%{?dist}.4
+Release:        6%{?dist}.5
 Summary:        MinGW Windows port of expat XML parser library
 
 
@@ -74,6 +74,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
 * Mon Dec 27 2010 Andrew Beekhof <abeekhof@redhat.com> - 2.0.1-6.4
 - Rebuild everything with gcc-4.4
   Related: rhbz#658833
